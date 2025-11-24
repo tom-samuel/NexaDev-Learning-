@@ -1,4 +1,4 @@
-here<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,16 +11,22 @@ here<!DOCTYPE html>
   <!-- NAVBAR -->
   <nav class="navbar">
     <h1 class="logo">NexaDev Learning</h1>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" data-section="home" class="active">Home</a></li>
+      <li><a href="#" data-section="about">About</a></li>
+      <li><a href="#" data-section="courses">Courses</a></li>
+      <li><a href="#" data-section="contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO SECTION -->
   <header id="home" class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h2>Empowering the Next Generation of Tech Talent</h2>
       <p>Learn coding, web design, AI, and digital skills to build your dream career.</p>
@@ -28,54 +34,26 @@ here<!DOCTYPE html>
     </div>
   </header>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about">
-    <h2>About NexaDev Learning</h2>
-    <p>
-      NexaDev Learning is a modern ICT institute dedicated to training students and young professionals 
-      in Web Development, Programming, Design, AI Tools, Digital Skills, and Tech Career Development.
-      We also help university students land real tech jobs by offering mentorship, career guidance,
-      portfolio projects, GitHub training, and industry-ready learning paths.
-    </p>
-  </section>
-
-  <!-- COURSES SECTION -->
-  <section id="courses" class="courses">
-    <h2>Our Courses</h2>
-
-    <div class="course-box">
-      <h3>Web Development</h3>
-      <p>Learn HTML, CSS, JavaScript, Git/GitHub & real-world projects.</p>
-    </div>
-
-    <div class="course-box">
-      <h3>AI & Automation</h3>
-      <p>Master AI tools, prompt engineering, automation workflows & AI projects.</p>
-    </div>
-
-    <div class="course-box">
-      <h3>Tech Career Coaching</h3>
-      <p>Portfolio building, interview prep, freelancing, and job placement support.</p>
-    </div>
-  </section>
+  <!-- DYNAMIC CONTENT CONTAINER -->
+  <main id="content">
+    <!-- Dynamic content will load here -->
+  </main>
 
   <!-- FOOTER -->
-  <footer class="footer" id="contact">
+  <footer class="footer">
     <h3>Connect With Us</h3>
-
     <div class="social-icons">
-      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt=""></a>
-      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt=""></a>
-      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt=""></a>
-      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt=""></a>
-      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt=""></a>
-      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt=""></a>
-      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt=""></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt="JavaScript"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt="HTML5"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt="CSS3"></a>
     </div>
-
-    <p>© 2025 NexaDev Learning — Building Africa’s Next Tech Leaders.</p>
+    <p>© 2025 NexaDev Learning — Transforming Africa’s Tech Talent.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-  </html>
+</html>
